@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Furry Friends Campaign: jQuery Proof-of-Concept
+    </title>
+    <link rel="stylesheet" type="text/
+css" href="styles/my_style.css">
+        <script src="scripts/jquery-3.1.1.js"></script>
+</head>
+
+<body>
+    <div id="clickMe">Show Me the Furry Friend of the Day</div>
+    <div id="picframe">
+        <img src="images/kate.png">
+        <script>
+            $(document).ready(function() {
+                $("#clickMe").click(function() {
+                    $("img").fadeIn(1000);
+                    $("#picframe").slideToggle("slow");
+                });
+            });
+        </script>
+
+    </div>
+</body>
+
+</html>
